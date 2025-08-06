@@ -1,21 +1,16 @@
 Package: upset.hp
-Title: Generate UpSet Plots of Variation Partitioning and Hierarchical Partitioning Based on Average Shared Variance
-Version: 0.0.1
+Title: Generate UpSet Plots of VP and HP Based on the ASV Concept
+Version: 0.0.4
 Authors@R: c(person("Jiangshan", "Lai", , "lai@njfu.edu.cn", role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-0279-8816")),person("Yao", "Liu", role="aut"))
+           comment = c(ORCID = "0000-0002-0279-8816")),person("Yao", "Liu", role="aut"),person("Bangken", "Ying", role="aut"))
 Maintainer: Jiangshan Lai <lai@njfu.edu.cn>
-Description: Using matrix layout to visualize the unique, common, or individual contribution of each predictor (or matrix of predictors) towards explained variation on different models. These contributions were derived from variation partitioning (VP) and hierarchical partitioning (HP), applying the algorithm of Lai J., Zou Y., Zhang J., Peres-Neto P. (2022) Generalizing hierarchical and variation partitioning in multiple regression and canonical analyses using the rdacca.hp R package.Methods in Ecology and Evolution, 13: 782-788 <doi:10.1111/2041-210X.13800>.
+Description: Using matrix layout to visualize the unique, common, or individual contribution of each predictor (or matrix of predictors) towards explained variation on different models. These contributions were derived from variation partitioning (VP) and hierarchical partitioning (HP), applying the algorithm of "Lai et al. (2022) Generalizing hierarchical and variation partitioning in multiple regression and canonical analyses using the rdacca.hp R package.Methods in Ecology and Evolution, 13: 782-788 <doi:10.1111/2041-210X.13800>".
 URL: https://github.com/laijiangshan/upset.hp
 Depends: R (>= 3.6.0)
 Imports:
-    rdacca.hp,
 	MuMIn,
-	glmm.hp,
-	gam.hp,
-	phylolm.hp,
-	lme4,
-	partR2,
 	vegan,
+	glmm.hp,
     ggplot2,
     patchwork,
     grDevices
@@ -23,4 +18,4 @@ LazyData: no
 License: GPL (>= 2)
 Encoding: UTF-8
 RoxygenNote: 7.3.1
-Date: 2025-05-27
+Date: 2025-07-20
